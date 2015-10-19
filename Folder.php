@@ -1,47 +1,5 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed');
+<?php
 class Folder {
-	
-	/*
-	1. set the path of a dir
-	$this->folder->where($directory);
-	
-	2. You can set extension : if extension not set -> by default you will see all files
-	$this->folder->extension(array('html'));
-	
-	3. You can set limit to read files as much as you want
-	$this->folder->limit(10);
-	
-	or you can set it to no limit to read all files in folder -> by default the limit is set to 1 file
-	$this->folder->no_limit();
-	
-	4. You have to use this function to read the folder
-	$this->folder->read();
-	
-	5. You can check the folder if is not empty -> if not empty return true
-	if($this->folder->not_empty()){
-	
-	6. You can get the files by using this function -> by default is always returning array
-		$this->folder->get_files();
-	}
-	
-	7. example 1 :
-	$this->folder->where($directory);
-	$this->folder->limit(10);
-	$this->folder->read();
-	$this->folder->get_files();
-	
-	8. example 2 :
-	$this->folder->where($directory);
-	$this->folder->read();
-	$this->folder->not_empty();
-	
-	9. example 3 :
-	$this->folder->where($directory);
-	$this->folder->extension(array('html'));
-	$this->folder->read();
-	$this->folder->not_empty();
-	
-	*/
 	
 	public $file_limit = 1;
 	public $array_extension = array();
