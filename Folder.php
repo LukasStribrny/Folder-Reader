@@ -10,7 +10,16 @@ class Folder {
 		set_time_limit(0);
 	}
 	
+	public function reset_previous(){
+		if($this->files){
+			foreach($this->files AS $i => $value){
+				unset($this->files[$i]);
+			}
+		}
+	}
+	
 	public function where($folder){
+		$this->reset_previous();
 		$this->read_folder = $folder;
 	}
 	
